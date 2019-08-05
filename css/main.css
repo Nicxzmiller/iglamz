@@ -3,6 +3,7 @@ html{
     font-size: 16px;
 }
 
+/*nav and hero styling*/
 .header{
     position: relative;
     width: 100%;
@@ -390,7 +391,9 @@ ul.social-icons.list-inline{
     padding-right: 5px;
     padding-left: 5px;
 }
+/*end of nav and hero styling*/
 
+/*services styling*/
 #about-us .carousel-indicators{
     position: static;
     padding-top: 30px;
@@ -453,4 +456,135 @@ p.text-secondary{
 
 #contents{
     margin-top: -400px;
+}
+
+/*end of services styling*/
+
+/*our work styling*/
+
+#work h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    color: #6c757d !important;
+}
+
+.row.no-gutters [class*=col-]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    transition: transform .5s ease;
+
+}
+
+.img-wrapper img:hover{
+    transform:scale(1.5);
+    cursor: zoom-in;
+    
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*end of our work styling*/
+
+/*team styling*/
+#team{
+    text-align: center;
+    color: #535353;
+    padding-top: 50px;
+    background-color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#team h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #ff1737;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#team h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #6c757d;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    letter-spacing: 1px;
+}
+
+#team p.desc{
+    max-width: 950px;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 40px;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.designation{
+    font-size: 17px;
+}
+
+.team-social li{
+    display: inline-block;
+}
+
+.team-social li a{
+    font-size: 14px;
+    color: #18191d;
+    height: 38px;
+    width: 38px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.team-img{
+    position: relative;
+}
+
+.team-social.white-bg{
+    background-color: #ffffff;
+}
+
+.team-overflow{
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    max-width: 370px;
+    margin-left: -20px;
+    background: #fff;
 }
