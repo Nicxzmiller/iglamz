@@ -705,3 +705,59 @@ a:hover{
 .team-member-swiper .swiper-slide{
     opacity: 0.5;
 }
+
+/*end of team section styling*/
+
+
+/*service section after team section styling*/
+
+.services{
+    background-image: url("../images/parallax4.jpg");
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-attachment: fixed;
+}
+
+.services h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.services a{
+    padding: 15px 30px;
+    background: transparent;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.5s ease-in;
+    border: 2px solid #fff;
+}
+
+.services a:hover{
+    padding: 15px 30px;
+    background: #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 13px;
+}
+
+/*end of service section after team section styling*/
