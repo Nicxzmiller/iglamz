@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d00079a4-5c81-46d0-92a9-ec384eb34891" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/res/image-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/res/image-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/res/image-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/res/image-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/res/image-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/res/image-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/res/image-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/res/image-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/res/image-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/res/image-7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +64,7 @@
       <workItem from="1564477799711" duration="28263000" />
       <workItem from="1564733439841" duration="6231000" />
       <workItem from="1564748153383" duration="19143000" />
-      <workItem from="1564911179697" duration="6396000" />
+      <workItem from="1564911179697" duration="7322000" />
     </task>
     <servers />
   </component>
