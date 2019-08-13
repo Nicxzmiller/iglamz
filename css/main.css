@@ -982,5 +982,41 @@ a:hover{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-
 /*End of Blog posts*/
+
+/*counter sector css*/
+.numbers{
+    background-image: url("../images/res/bg-testimonials.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding-top: 140px;
+    padding-bottom: 150px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.color-ff{
+    color: #ffffff;
+}
+
+.fs-35{
+    font-size: 70px;
+}
+.fw-700{
+    font-weight: bold;
+}
+.color-aaa{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+
+.numbers .fa{
+    font-size: 70px;
+}
+
+/*End of counter sector css*/
