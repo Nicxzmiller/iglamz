@@ -1,0 +1,13 @@
+@media only screen and (min-width: 0px) and (max-width: 959px){
+    .nav ul li{
+        display: none;
+    }
+
+    .nav ul li.logo{
+        display: block;
+    }
+
+    .nav-icon{
+        display: block;
+    }
+}
