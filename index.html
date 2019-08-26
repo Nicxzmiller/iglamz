@@ -1,1241 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>iGlamz</title>
-    <!-- themify icons cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!--End of Bootstrap CDN-->
-    <!--cube portfolio css-->
-    <link rel="stylesheet" href="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/css/cubeportfolio.min.css">
-    <!--  swiper css cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-    <!-- magnific pop-up -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loading...</title>
     <!-- fontAwesome CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--End of fontAwesome CDN-->
-    <!--  owl carousel css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-    <!--  owl carousel default theme css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!--Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <!--End of Google fonts -->
-    <!--main and responsive css-->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <!--End main css-->
-    <!-- bxslider css -->
-    <link rel="stylesheet" href="css//jquery.bxslider.css">
-
-
 </head>
+<style>
+    body{
+        background:transparent url("images/res/black.jpg") 0 0 no-repeat;
+        background-size:cover;
+        min-width: 600px;
+        color: #ffffff;
+        font-size: 12px;
+        font-family: "Roboto Condensed", sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: #ffffff;
+    }
+
+    #main{
+        width: 100%;
+        position: relative;
+        margin-top: 140px;
+        z-index: 100;
+    }
+
+    .wrap{
+        width: 600px;
+        margin: auto;
+    }
+
+    #header{
+        padding: 70px 0;
+    }
+
+    #header h1{
+          font-size: 18px;
+          font-family:"Roboto Condensed", sans-serif;
+          text-align: center;
+          position: relative;
+          width: 280px;
+          margin: auto;
+      }
+    #header h1::before{
+          content: "";
+          width: 40px;
+          height: 2px;
+          background-color: #ffffff;
+          position: absolute;
+          top: 50%;
+          left: 0;
+      }
+    #header h1::after{
+        content: "";
+        width: 40px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+
+    #contents{
+        font-family: "Roboto Condensed", sans-serif;
+        text-align: center;
+        color: #ffffff;
+        padding-bottom: 35px;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: normal;
+        margin-top: 70px;
+    }
+
+    #contents img{
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 7px;
+    }
+
+    #contents .loader{
+        padding: 20px 0;
+    }
+    #contents .loader .load{
+         background: orangered;
+     }
+
+    #contents .loader .load .percentage{
+        background-color: #ffffff;
+        height: 10px;
+    }
+
+    #contents .loader .info{
+        display: flex;
+        font-size: 18px;
+    }
+    #contents .loader .info span{
+        flex: 1;
+    }
+    #contents .loader .info span:first-child{
+        text-align: left;
+    }
+    #contents .loader .info span:last-child{
+        text-align: right;
+    }
+
+    #footer{
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    #footer .social-links{
+        display: flex;
+        justify-content: center;
+    }
+    #footer .social-links a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 7px;
+        width: 40px;
+        height: 40px;
+        border: 3px solid #ffffff;
+        font-size: 20px;
+        border-radius: 40px;
+    }
+
+
+</style>
 <body>
-
-<!--navigation-->
-<header class="header">
-    <ul class="bxslider">
-        <li>
-            <div class="bg-video">
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="herovideo">
-                    <source src="media/media-1.mp4" type="video/mp4">
-                </video>
-                <div class="container">
-                    <div class="vidContent">
-                        <h1 class="text-left">WELCOME TO IGLAMZ</h1>
-                        <p class="text-left">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eum molestias,<br>
-                             adipisci totam eius aperiam officiis eligendi,<br> reiciendis nulla quia fugit blanditiis
-                             libero corrupti distinctio dolor, deleniti ratione nihil nobis.
-                        </p>
-                        <a href="" id="vidBtn">Click Here</a>
-                    </div>
-                </div>
-
-            <ul class="social-icons list-inline">
-                    <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-            </ul>
+    <div id="main">
+        <header id="header">
+            <div class="wrap">
+                <h1>WELCOME TO GLAMZ</h1>
             </div>
-        </li>
-
-            <li>
-                <div class="bg-video">
-                        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="herovideo">
-                            <source src="media/media-2.mp4" type="video/mp4">
-                        </video>
-                        <div class="container">
-                            <div class="vidContent">
-                                <h1 class="text-left">WELCOME TO IGLAMZ</h1>
-                                <p class="text-left">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eum molestias,<br>
-                                    adipisci totam eius aperiam officiis eligendi,<br> reiciendis nulla quia fugit blanditiis
-                                    libero corrupti distinctio dolor, deleniti ratione nihil nobis.
-                                </p>
-                                <a href="" id="vidBtn">Click Here</a>
-                            </div>
-                        </div>
-        
-                    <ul class="social-icons list-inline">
-                            <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                    </ul>
-                    </div>
-            </li>
-                <li>
-                    <div class="bg-video">
-                            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="herovideo">
-                                <source src="media/media-3.mp4" type="video/mp4">
-                            </video>
-                            <div class="container">
-                                <div class="vidContent">
-                                    <h1 class="text-left">WELCOME TO IGLAMZ</h1>
-                                    <p class="text-left">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eum molestias,<br>
-                                        adipisci totam eius aperiam officiis eligendi,<br> reiciendis nulla quia fugit blanditiis
-                                        libero corrupti distinctio dolor, deleniti ratione nihil nobis.
-                                    </p>
-                                    <a href="" id="vidBtn">Click Here</a>
-                                </div>
-                            </div>
-            
-                        <ul class="social-icons list-inline">
-                                <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                        </ul>
-                        </div>
-                </li>
-        <li>
-            <div class="bg-video">
-                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="herovideo">
-                    <source src="media/media-4.mp4" type="video/mp4">
-                </video>
-                <div class="container">
-                    <div class="vidContent">
-                        <h1 class="text-left">WELCOME TO IGLAMZ</h1>
-                        <p class="text-left">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eum molestias,<br>
-                            adipisci totam eius aperiam officiis eligendi,<br> reiciendis nulla quia fugit blanditiis
-                            libero corrupti distinctio dolor, deleniti ratione nihil nobis.
-                        </p>
-                        <a href="" id="vidBtn">Click Here</a>
-                    </div>
-                </div>
-
-                <ul class="social-icons list-inline">
-                    <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Projects</a></li>
-            <li class="logo"><a href=""><img src="images/iglamz.png" alt="" class="white"><img src="images/iglamz.png" class="black" alt=""></a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Clients</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <a class="nav-icon" href="javascript:void(0);"><span></span><span></span><span></span></a>
-    </nav>
-</header>
-
-<div style="height: 500px;"></div>
-
-<div class="full-nav">
-    <div class="logo"><a href=""><img src="images/iglamz.png" alt=""></a></div>
-
-    <nav class="nav2">
-        <ul>
-            <li><a href=""><span><i class="fa fa-home" aria-hidden="true"></i></span> Home</a></li>
-            <li><a href=""><span><i class="fa fa-cogs" aria-hidden="true"></i></span> Features</a></li>
-            <li><a href=""><span><i class="fa fa-users" aria-hidden="true"></i></span> Team</a></li>
-            <li><a href=""><span><i class="fa fa-share-alt" aria-hidden="true"></i></span> Projects</a></li>
-            <li><a href=""><span><i class="fa fa-money" aria-hidden="true"></i></span> Pricing</a></li>
-            <li><a href=""><span><i class="fa fa-sitemap" aria-hidden="true"></i></span> Clients</a></li>
-            <li><a href=""><span><i class="fa fa-rss" aria-hidden="true"></i></span> Blog</a></li>
-            <li><a href=""><span><i class="fa fa-address-book" aria-hidden="true"></i></span> Contact</a></li>
-        </ul>
-    </nav>
-
-    <ul class="social-icons list-inline">
-        <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-    </ul>
-
-    <div class="corner-circle">
-        <a href="javascript:void(0);" class="nav-close"><span></span><span></span></a>
-    </div>
-
-</div>
-
-<!--END OF NAVIGATION SECTION-->
-
-<!--SERVICE SECTION-->
-<main id="contents" role="main">
-    <section id="about-us">
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
-                    <h3 id="">Awesome Services</h3>
-                    <p class="lead pb-5">
-                        THE STUNNING POSSIBILITIES OF THE TIME
-                    </p>
-                    <div id="carouselServices" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md px-md-5">
-                                            <div class="text-dark pb-3">
-                                                <i class="fa fa-shield fa-5x"></i>
-                                            </div>
-                                                <h4 class="text-dark">
-                                                    WPML MULTI-LANGUAGE SUPPORT
-                                                </h4>
-                                                <br>
-                                                <p class="text-secondary">
-                                                    Lorem ipsum dolor sit amet,
-                                                    consectetur adipisicing elit. Accusantium
-                                                    aliquam beatae consectetur dolorem esse eum expedita,
-                                                    id ipsa molestiae necessitatibus nemo perspiciatis
-                                                    quas repellendus veritatis voluptate.
-                                                    Amet minus praesentium qui.
-                                                </p>
-                                        </div>
-                                        <div class="col-md px-md-5">
-                                                <div class="text-dark pb-3">
-                                                <i class="fa fa-shield fa-5x"></i>
-                                            </div>
-                                                <h4 class="text-dark">
-                                                    FULLY CUSTOMIZABLE THEME
-                                                </h4>
-                                                <br>
-                                                <p class="text-secondary">
-                                                    Lorem ipsum dolor sit amet,
-                                                    consectetur adipisicing elit. Accusantium
-                                                    aliquam beatae consectetur dolorem esse eum expedita,
-                                                    id ipsa molestiae necessitatibus nemo perspiciatis
-                                                    quas repellendus veritatis voluptate.
-                                                    Amet minus praesentium qui.
-                                                </p>
-                                        </div>
-                                        <div class="col-md px-md-5">
-                                            <div class="text-dark pb-3">
-                                                <i class="fa fa-shield fa-5x"></i>
-                                            </div>
-                                                <h4 class="text-dark">
-                                                    FULLY EQUIPPED HAIR PRODUCTS
-                                                </h4>
-                                                <br>
-                                                <p class="text-secondary">
-                                                    Lorem ipsum dolor sit amet,
-                                                    consectetur adipisicing elit. Accusantium
-                                                    aliquam beatae consectetur dolorem esse eum expedita,
-                                                    id ipsa molestiae necessitatibus nemo perspiciatis
-                                                    quas repellendus veritatis voluptate.
-                                                    Amet minus praesentium qui.
-                                                </p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-md px-md-5">
-                                                <div class="text-dark pb-3">
-                                                    <i class="fa fa-diamond fa-5x"></i>
-                                                </div>
-                                                <h4 class="text-dark">
-                                                    FULL AND PARTIAL MAKEOVER
-                                                </h4>
-                                                <br>
-                                                <p class="text-secondary">
-                                                    Lorem ipsum dolor sit amet,
-                                                    consectetur adipisicing elit. Accusantium
-                                                    aliquam beatae consectetur dolorem esse eum expedita,
-                                                    id ipsa molestiae necessitatibus nemo perspiciatis
-                                                    quas repellendus veritatis voluptate.
-                                                    Amet minus praesentium qui.
-                                                </p>
-                                            </div>
-                                            <div class="col-md px-md-5">
-                                                <div class="text-dark pb-3">
-                                                    <i class="fa fa-shopping-bag fa-5x"></i>
-                                                </div>
-                                                <h4 class="text-dark">
-                                                    MODERN AND NATIVE ATTIRES
-                                                </h4>
-                                                <br>
-                                                <p class="text-secondary">
-                                                    Lorem ipsum dolor sit amet,
-                                                    consectetur adipisicing elit. Accusantium
-                                                    aliquam beatae consectetur dolorem esse eum expedita,
-                                                    id ipsa molestiae necessitatibus nemo perspiciatis
-                                                    quas repellendus veritatis voluptate.
-                                                    Amet minus praesentium qui.
-                                                </p>
-                                            </div>
-                                                <div class="col-md px-md-5">
-                                                    <div class="text-dark pb-3">
-                                                        <i class="fa fa-shopping-bag fa-5x"></i>
-                                                    </div>
-                                                    <h4 class="text-dark">
-                                                        MODERN AND NATIVE ATTIRES
-                                                    </h4>
-                                                    <br>
-                                                    <p class="text-secondary">
-                                                        Lorem ipsum dolor sit amet,
-                                                        consectetur adipisicing elit. Accusantium
-                                                        aliquam beatae consectetur dolorem esse eum expedita,
-                                                        id ipsa molestiae necessitatibus nemo perspiciatis
-                                                        quas repellendus veritatis voluptate.
-                                                        Amet minus praesentium qui.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-md px-md-5">
-                                            <div class="text-dark pb-3">
-                                                <i class="fa fa-diamond fa-5x"></i>
-                                            </div>
-                                            <h4 class="text-dark">
-                                                FULL AND PARTIAL MAKEOVER
-                                            </h4>
-                                            <br>
-                                            <p class="text-secondary">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipisicing elit. Accusantium
-                                                aliquam beatae consectetur dolorem esse eum expedita,
-                                                id ipsa molestiae necessitatibus nemo perspiciatis
-                                                quas repellendus veritatis voluptate.
-                                                Amet minus praesentium qui.
-                                            </p>
-                                        </div>
-                                        <div class="col-md px-md-5">
-                                            <div class="text-dark pb-3">
-                                                <i class="fa fa-shopping-bag fa-5x"></i>
-                                            </div>
-                                            <h4 class="text-dark">
-                                                MODERN AND NATIVE ATTIRES
-                                            </h4>
-                                            <br>
-                                            <p class="text-secondary">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipisicing elit. Accusantium
-                                                aliquam beatae consectetur dolorem esse eum expedita,
-                                                id ipsa molestiae necessitatibus nemo perspiciatis
-                                                quas repellendus veritatis voluptate.
-                                                Amet minus praesentium qui.
-                                            </p>
-                                        </div>
-                                        <div class="col-md px-md-5">
-                                            <div class="text-dark pb-3">
-                                                <i class="fa fa-shopping-bag fa-5x"></i>
-                                            </div>
-                                            <h4 class="text-dark">
-                                                MODERN AND NATIVE ATTIRES
-                                            </h4>
-                                            <br>
-                                            <p class="text-secondary">
-                                                Lorem ipsum dolor sit amet,
-                                                consectetur adipisicing elit. Accusantium
-                                                aliquam beatae consectetur dolorem esse eum expedita,
-                                                id ipsa molestiae necessitatibus nemo perspiciatis
-                                                quas repellendus veritatis voluptate.
-                                                Amet minus praesentium qui.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                    </div>
-
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselServices" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselServices" data-slide-to="1"></li>
-                                        <li data-target="#carouselServices" data-slide-to="2"></li>
-                                    </ol>
-
-                                    <a href="#carouselServices" class="carousel-control-prev" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-
-                                    <a href="#carouselServices" class="carousel-control-next" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section>
-</main>
-
-<!--END OF SERVICES SECTION-->
-<br><br><br>
-
-<!-- OUR WORK SECTION-->
-<section id="work">
-    <div class="content-box">
-        <div class="content-title">
-            <h3 class="text-center">OUR WORK</h3>
-            <br><br>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col-md-3 col-sm-4">
-                    <div class="img-wrapper">
-                        <a href="images/res/image-1.jpg">
-                            <img src="images/res/image-1.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <div class="img-wrapper">
-                        <a href="images/res/image-2.jpg">
-                            <img src="images/res/image-2.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <div class="img-wrapper">
-                        <a href="images/res/image-3.jpg">
-                            <img src="images/res/image-3.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <div class="img-wrapper">
-                        <a href="images/res/image-4.jpg">
-                            <img src="images/res/image-4.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <div class="img-wrapper">
-                        <a href="images/res/image-5.jpg">
-                            <img src="images/res/image-5.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <div class="img-wrapper">
-                        <a href="images/res/image-6.jpg">
-                            <img src="images/res/image-6.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <div class="img-wrapper">
-                        <a href="images/res/image-7.jpg">
-                            <img src="images/res/image-7.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-4">
-                    <div class="img-wrapper">
-                        <a href="images/res/image-8.jpg">
-                            <img src="images/res/image-8.jpg" class="img-responsive" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!--END OF WORK SECTION-->
-
-<!-- Team Section -->
-<section id="team">
-    <div class="container">
+        </header>
         <br><br><br>
-        <div class="row">
-            <div class="col-md-12">
-                <h5>A Passionate Team</h5>
-                <h2>Meet the Team</h2>
-                <p class="desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Reprehenderit quae fugiat omnis ducimus tempore 
-                     impedit adipisci facere ipsa corporis animi,
-                      quia eius rerum modi minus accusantium, dignissimos possimus voluptates hic!
-                </p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-12">
-                <div class="swiper-container team-member-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                        <div class="team-overflow">
-                            <div class="team-data-img">
-                                <div class="team-img">
-                                    <img src="images/res/team8.jpg" alt="">
-                                    <div class="team-box-content">
-                                        <ul class="team-social white-bg">
-                                            <li class="ti ti-facebook"></li>
-                                            <li class="ti ti-twitter"></li>
-                                            <li class="ti ti-google"></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="team-text">
-                                <h4 class="color-blade font-weight-normal m-0 text-capitalize">Ricky Morti</h4>
-                                <p class="color-light-gray font-weight-light designation text-capitalize">
-                                    CEO & FOUNDER
-                                </p>
-                            </div>
-
-                            <ul class="team-progress text-left">
-                                <li class="progress-item">
-                                    <h6>Progress Management
-                                        <span class="float-right">
-                                            <b class="count">82</b>%
-                                        </span>
-                                    </h6>
-
-                                    <div class="progress">
-                                        <span class="progress-bar w-82" role="progressbar" aria-valuenow='82' aria-valuemin="0" aria-valuemax="100"></span>
-                                    </div>
-                                </li>
-                                <li class="progress-item">
-                                    <h6>SEO Services
-                                        <span class="float-right">
-                                            <b class="count">72</b>%
-                                        </span>
-                                    </h6>
-
-                                    <div class="progress">
-                                        <span class="progress-bar w-72" role="progressbar" aria-valuenow='72' aria-valuemin="0" aria-valuemax="100"></span>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                            <div class="team-overflow">
-                                <div class="team-data-img">
-                                    <div class="team-img">
-                                        <img src="images/res/team9.jpg" alt="">
-                                        <div class="team-box-content">
-                                            <ul class="team-social white-bg">
-                                                <li class="ti ti-facebook"></li>
-                                                <li class="ti ti-twitter"></li>
-                                                <li class="ti ti-google"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="team-text">
-                                    <h4 class="color-blade font-weight-normal m-0 text-capitalize">Anita Penguin</h4>
-                                    <p class="color-light-gray font-weight-light designation text-capitalize">
-                                        HR & Administrator
-                                    </p>
-                                </div>
-
-                                <ul class="team-progress text-left">
-                                    <li class="progress-item">
-                                        <h6>Progress Management
-                                            <span class="float-right">
-                                            <b class="count">82</b>%
-                                        </span>
-                                        </h6>
-
-                                        <div class="progress">
-                                            <span class="progress-bar w-82" role="progressbar" aria-valuenow='82' aria-valuemin="0" aria-valuemax="100"></span>
-                                        </div>
-                                    </li>
-                                    <li class="progress-item">
-                                        <h6>SEO Services
-                                            <span class="float-right">
-                                            <b class="count">72</b>%
-                                        </span>
-                                        </h6>
-
-                                        <div class="progress">
-                                            <span class="progress-bar w-72" role="progressbar" aria-valuenow='72' aria-valuemin="0" aria-valuemax="100"></span>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="team-overflow">
-                                <div class="team-data-img">
-                                    <div class="team-img">
-                                        <img src="images/res/team10.jpg" alt="">
-                                        <div class="team-box-content">
-                                            <ul class="team-social white-bg">
-                                                <li class="ti ti-facebook"></li>
-                                                <li class="ti ti-twitter"></li>
-                                                <li class="ti ti-google"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="team-text">
-                                    <h4 class="color-blade font-weight-normal m-0 text-capitalize">Ben Carty</h4>
-                                    <p class="color-light-gray font-weight-light designation text-capitalize">
-                                        Managing Director & Site Manager
-                                    </p>
-                                </div>
-
-                                <ul class="team-progress text-left">
-                                    <li class="progress-item">
-                                        <h6>Progress Management
-                                            <span class="float-right">
-                                            <b class="count">82</b>%
-                                        </span>
-                                        </h6>
-
-                                        <div class="progress">
-                                            <span class="progress-bar w-82" role="progressbar" aria-valuenow='82' aria-valuemin="0" aria-valuemax="100"></span>
-                                        </div>
-                                    </li>
-                                    <li class="progress-item">
-                                        <h6>SEO Services
-                                            <span class="float-right">
-                                            <b class="count">72</b>%
-                                        </span>
-                                        </h6>
-
-                                        <div class="progress">
-                                            <span class="progress-bar w-72" role="progressbar" aria-valuenow='72' aria-valuemin="0" aria-valuemax="100"></span>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-button-next slider-arrows">
-                        <i class="ti ti-angle-right"></i>
-                    </div>
-
-                    <div class="swiper-button-prev slider-arrows">
-                        <i class="ti ti-angle-left"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-    </div>
-</section>
-<!--End of Team Section -->
-<br><br>
-<!--service section after team section-->
-<div class="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                <p class="text-white">NEW UPDATES</p>
-                <br>
-                <h2 class="text-white">LOOKING FOR EXCLUSIVE DIGITAL SERVICES</h2>
+        <section id="contents">
+            <div class="wrap">
+                <img src="images/iglamz.png" alt="">
                 <br><br>
-                <a href="" class="btn">LEARN MORE</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end of service section after team section-->
-<br><br>
-
-<!--portfolio section-->
-
-<div id="work">
-    <div class="container-fluid">
-        <br><br>
-        <div class="row">
-            <div class="col-md-12">
-                <h5>Some of our best projects</h5>
-                <h2>IGLAMZ PORTFOLIO</h2>
-                <p class="desc">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Accusantium
-                    aliquam beatae consectetur dolorem esse eum expedita,<br>
-                    id ipsa molestiae necessitatibus nemo perspiciatis
-                    quas repellendus veritatis voluptate.
-                    Amet minus praesentium qui.
-                </p>
-            </div>
-        </div>
-
-        <div class="row d-block">
-            <div class="cbp-l-filters-alignCenter">
-                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-filter-style">ALL
-                    <div class="cbp-filter-counter"></div>
-                </div>
-
-                <div data-filter=".graphic-designs" class="cbp-filter-item cbp-filter-style">GRAPHIC DESIGNS
-                    <div class="cbp-filter-counter"></div>
-                </div>
-
-                <div data-filter=".web-designs" class="cbp-filter-item cbp-filter-style">WEB DESIGNS
-                    <div class="cbp-filter-counter"></div>
-                </div>
-
-                <div data-filter="*" class="cbp-filter-item cbp-filter-style">SEO
-                    <div class="cbp-filter-counter"></div>
-                </div>
-
-                <div data-filter="*" class="cbp-filter-item cbp-filter-style">MARKETING
-                    <div class="cbp-filter-counter"></div>
-                </div>
-            </div>
-
-            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-flat no-transition">
-
-                <div class="cbp-item web-designs marketing">
-                    <a href="images/res/work1.jpg" class="cbp-caption cbp-lightbox" data-title="Gammawebng UI">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="images/res/work1.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <p>ELEGANT | Makeups</p>
-                                    <div class="cbp-l-caption-title">
-                                        The bold and Beautiful
-                                    </div>
-                                    <span class="work-icon">
-                                        <i class="ti ti-arrow-right"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item grapgic-designs seo">
-                    <a href="images/res/work2.jpg" class="cbp-caption cbp-lightbox" data-title="Gammawebng UI">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="images/res/work2.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <p>ELEGANT | Attires</p>
-                                    <div class="cbp-l-caption-title">
-                                        Let them Stare
-                                    </div>
-                                    <span class="work-icon">
-                                        <i class="ti ti-arrow-right"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item seo marketing">
-                    <a href="images/res/work6.jpg" class="cbp-caption cbp-lightbox" data-title="Gammawebng UI">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="images/res/work6.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <p>ELEGANT | Shoes</p>
-                                    <div class="cbp-l-caption-title">
-                                        MAke your Feet Happy
-                                    </div>
-                                    <span class="work-icon">
-                                        <i class="ti ti-arrow-right"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item web-designs seo">
-                    <a href="images/res/work4.jpg" class="cbp-caption cbp-lightbox" data-title="Gammawebng UI">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="images/res/work4.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <p>ELEGANT | Makeups</p>
-                                    <div class="cbp-l-caption-title">
-                                        The bold and Beautiful
-                                    </div>
-                                    <span class="work-icon">
-                                        <i class="ti ti-arrow-right"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item web designs marketing">
-                    <a href="images/res/work5.jpg" class="cbp-caption cbp-lightbox" data-title="Gammawebng UI">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="images/res/work5.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <p>ELEGANT | Makeups</p>
-                                    <div class="cbp-l-caption-title">
-                                        The bold and Beautiful
-                                    </div>
-                                    <span class="work-icon">
-                                        <i class="ti ti-arrow-right"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item web designs marketing">
-                    <a href="images/res/work3.jpg" class="cbp-caption cbp-lightbox" data-title="Gammawebng UI">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="images/res/work3.jpg" alt="">
-                        </div>
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-alignCenter">
-                                <div class="cbp-l-caption-body">
-                                    <p>ELEGANT | Makeups</p>
-                                    <div class="cbp-l-caption-title">
-                                        The bold and Beautiful
-                                    </div>
-                                    <span class="work-icon">
-                                        <i class="ti ti-arrow-right"></i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- end of portfolio section-->
-<br><br><br>    
-
-<!--Blog posts-->
-<div class="container" id="latest">
-    <div class="row">
-        <div class="col-md-12">
-            <div id="news-slider" class="owl-carousel">
-                <div class="post-slide">
-                    <ul class="post-info">
-                        <li><i class="fa fa-tag"></i> <a href="">PHP</a></li>
-                        <li><i class="fa fa-calendar"></i> <a href="">July 22</a></li>
-                        <li><i class="fa fa-comment"></i> <a href="">1</a></li>
-                    </ul>
-                    
-                    <div class="post-img">
-                        <img src="images/res/001.jpg" alt="">
-                        <a href="" class="read">read more</a>
+                <div class="loader">
+                    <div class="load">
+                        <div id="count" class="percentage" style="width: 0;"></div>
                     </div>
 
-                    <div class="post-content">
-                        <span class="post-author">
-                            <a href=""><img src="images/res/001.jpg" alt=""></a>
-                        </span>
-                    </div>
-                    <h3 class="post-title">Latest New Post</h3>
-                    <p class="post-description">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Consectetur cum cupiditate deserunt,
-                        eum expedita hic ipsum mollitia quod sunt voluptatem.
-                        Aut facere iste non optio quas quasi vero voluptatibus voluptatum.
-                    </p>
-                </div>
-
-                <div class="post-slide">
-                    <ul class="post-info">
-                        <li><i class="fa fa-tag"></i> <a href="">PHP</a></li>
-                        <li><i class="fa fa-calendar"></i> <a href="">July 22</a></li>
-                        <li><i class="fa fa-comment"></i> <a href="">1</a></li>
-                    </ul>
-
-                    <div class="post-img">
-                        <img src="images/res/002.jpg" alt="">
-                        <a href="" class="read">read more</a>
-                    </div>
-
-                    <div class="post-content">
-                        <span class="post-author">
-                            <a href=""><img src="images/res/002.jpg" alt=""></a>
-                        </span>
-                    </div>
-                    <h3 class="post-title">Latest New Post</h3>
-                    <p class="post-description">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Consectetur cum cupiditate deserunt,
-                        eum expedita hic ipsum mollitia quod sunt voluptatem.
-                        Aut facere iste non optio quas quasi vero voluptatibus voluptatum.
-                    </p>
-                </div>
-
-                <div class="post-slide">
-                    <ul class="post-info">
-                        <li><i class="fa fa-tag"></i> <a href="">PHP</a></li>
-                        <li><i class="fa fa-calendar"></i> <a href="">July 22</a></li>
-                        <li><i class="fa fa-comment"></i> <a href="">1</a></li>
-                    </ul>
-
-                    <div class="post-img">
-                        <img src="images/res/003.jpg" alt="">
-                        <a href="" class="read">read more</a>
-                    </div>
-
-                    <div class="post-content">
-                        <span class="post-author">
-                            <a href=""><img src="images/res/003.jpg" alt=""></a>
-                        </span>
-                    </div>
-                    <h3 class="post-title">Latest New Post</h3>
-                    <p class="post-description">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Consectetur cum cupiditate deserunt,
-                        eum expedita hic ipsum mollitia quod sunt voluptatem.
-                        Aut facere iste non optio quas quasi vero voluptatibus voluptatum.
-                    </p>
-                </div>
-
-                <div class="post-slide">
-                    <ul class="post-info">
-                        <li><i class="fa fa-tag"></i> <a href="">PHP</a></li>
-                        <li><i class="fa fa-calendar"></i> <a href="">July 22</a></li>
-                        <li><i class="fa fa-comment"></i> <a href="">1</a></li>
-                    </ul>
-
-                    <div class="post-img">
-                        <img src="images/res/008.jpg" alt="">
-                        <a href="" class="read">read more</a>
-                    </div>
-
-                    <div class="post-content">
-                        <span class="post-author">
-                            <a href=""><img src="images/res/008.jpg" alt=""></a>
-                        </span>
-                    </div>
-                    <h3 class="post-title">Latest New Post</h3>
-                    <p class="post-description">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Consectetur cum cupiditate deserunt,
-                        eum expedita hic ipsum mollitia quod sunt voluptatem.
-                        Aut facere iste non optio quas quasi vero voluptatibus voluptatum.
-                    </p>
-                </div>
-
-                <div class="post-slide">
-                    <ul class="post-info">
-                        <li><i class="fa fa-tag"></i> <a href="">PHP</a></li>
-                        <li><i class="fa fa-calendar"></i> <a href="">July 22</a></li>
-                        <li><i class="fa fa-comment"></i> <a href="">1</a></li>
-                    </ul>
-
-                    <div class="post-img">
-                        <img src="images/res/006.jpg" alt="">
-                        <a href="" class="read">read more</a>
-                    </div>
-
-                    <div class="post-content">
-                        <span class="post-author">
-                            <a href=""><img src="images/res/006.jpg" alt=""></a>
-                        </span>
-                    </div>
-                    <h3 class="post-title">Latest New Post</h3>
-                    <p class="post-description">
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Consectetur cum cupiditate deserunt,
-                        eum expedita hic ipsum mollitia quod sunt voluptatem.
-                        Aut facere iste non optio quas quasi vero voluptatibus voluptatum.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!--End of Blog posts-->
-
-<br><br><br>
-
-<!--counter section-->
-
-<section class="numbers text-center" id="testimonials">
-    <br><br>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-7">
-                <i class="fa fa-snowflake-o"></i>
-                <p class="count fs-35 color-ff fw-700">972</p>
-                <h3 class="color-aaa">+ PROJECTS</h3>
-            </div>
-
-            <div class="col-md-3 col-sm-7">
-                <i class="fa fa-balance-scale"></i>
-                <p class="count fs-35 color-ff fw-700">760</p>
-                <h3 class="color-aaa">+ VIDEOS</h3>
-            </div>
-
-            <div class="col-md-3 col-sm-7">
-                <i class="fa fa-bell"></i>
-                <p class="count fs-35 color-ff fw-700">1032</p>
-                <h3 class="color-aaa">+ AWARDS</h3>
-            </div>
-
-            <div class="col-md-3 col-sm-7">
-                <i class="fa fa-circle"></i>
-                <p class="count fs-35 color-ff fw-700">300</p>
-                <h3 class="color-aaa">+ CLIENTS</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--End of counter section-->
-
-<br><br>
-
-<!--Client section-->
-<section id="clients">
-    <div class="content-box-sm">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h5>SATISFIED CLIENTS</h5>
-                    <h2>Our happy <strong>Clients</strong></h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div id="clients-list" class="owl-carousel owl-theme">
-                    <div class="client">
-                    <img src="images/res/brand1.png" alt="" class="img-responsive">
-                </div>
-
-                    <div class="client">
-                        <img src="images/res/brand2.png" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="client">
-                        <img src="images/res/brand3.png" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="client">
-                        <img src="images/res/brand4.png" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="client">
-                        <img src="images/res/brand5.png" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="client">
-                        <img src="images/res/brand1.png" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="client">
-                        <img src="images/res/brand2.png" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="client">
-                        <img src="images/res/brand3.png" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="client">
-                        <img src="images/res/brand4.png" alt="" class="img-responsive">
-                    </div>
-
-                    <div class="client">
-                        <img src="images/res/brand5.png" alt="" class="img-responsive">
+                    <div class="info">
+                        <span>0%</span>
+                        <span id="progress">0%</span>
+                        <span>100%</span>
                     </div>
 
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!--End of Client section-->
+        </section>
 
-<br><br><br>
-
-<!--footer section-->
-<footer>
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <br><br>
-                <div class="col-md-6">
-                    <div id="contact-left">
-                        <h2>IGLAMZ</h2>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ipsa labore nisi
-                            repellat voluptatibus Amet cum dolores esse, et fuga incidunt ipsa labore
-                            magnam magni necessitatibus nostrum rem repellat sed.</p>
-                        <div id="contact-info">
-                            <address>
-                                <strong>Headquarters:</strong><br>
-                                <p>iGlamz Studio Opposite University of Jos Main Campus, jos. Plateau State</p>
-                            </address>
-                            <div id="phone-fax-email">
-                                <p>
-                                    <strong>Phone:</strong><span>
-                                    +2347067677985
-                                </span><br>
-
-                                    <strong>Fax:</strong><span>
-                                    N/A
-                                </span><br>
-
-                                    <strong>Email:</strong><span>
-                                    patienceokorie@iglamzstudio.com
-                                </span><br>
-
-                                </p>
-                            </div>
-                        </div>
-
-                        <ul class="social-list">
-                            <li><a href="" class="social-icon icon-wide">
-                                <i class="fa fa-facebook"></i>
-                            </a></li>
-
-                            <li><a href="" class="social-icon icon-wide">
-                                <i class="fa fa-twitter"></i>
-                            </a></li>
-
-                            <li><a href="" class="social-icon icon-wide">
-                                <i class="fa fa-instagram"></i>
-                            </a></li>
-
-                            <li><a href="" class="social-icon icon-wide">
-                                <i class="fa fa-youtube"></i>
-                            </a></li>
-
-                        </ul>
-
-                    </div>
-                </div>
-                
-                <div class="col-md-6">
-                    <div id="contact-right">
-                        <h3>Contact us</h3><br>
-                        <form action="">
-                                <input type="text" name="full name" placeholder="Full Name" class="form-control">
-
-                                <input type="text" name="email" placeholder="Email Address" class="form-control">
-
-                                <textarea name="message" cols="75" rows="5" placeholder="Message"></textarea>
-
-                            <div id="send-btn">=
-                                <a href="" class="btn btn-lg btn-general btn-white">SEND</a>
-                            </div>
-                        </form>
-                    </div>
+        <footer id="footer">
+            <div class="wrap">
+                <div class="social-links">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href=""><i class="fa fa-youtube"></i></a>
                 </div>
             </div>
-        </div>
+        </footer>
+
     </div>
 
-     <!--footer-menu-->
-    <div id="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="footer-copyrights">
-                        <p>Copyrights &copy; 2019 All Rights Reserved by iGLAMZ Inc.</p>
-                    </div>
-                </div>
+    <script>
+        var elem = document.getElementById("count");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame() {
+            if(width >= 100){
+                clearInterval(id);
+                window.open('home.html','_self');
+            }
+            else{
+                width++;
+                elem.style.width = width + '%';
+                document.getElementById("progress").innerHTML = width * 1 + '%';
+            }
+        }
 
-                <div class="col-md-6">
-                    <div id="footer-menu">
-                        <ul>
-                            <li><a href="">HOME</a></li> /
-                            <li><a href="">FEATURES</a></li> /
-                            <li><a href="">TEAM</a></li> /
-                            <li><a href="">PROJECTS</a></li> /
-                            <li><a href="">PRICING</a></li> /
-                            <li><a href="">CLIENTS</a></li> /
-                            <li><a href="">BLOG</a></li> /
-                            <li><a href="">CONTACT</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--footer-menu-->
-</footer>
-
-<!--End footer section-->
-
-
-<!--jQuery js-->
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-<!--swiper js cdn-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
-<!--owl carousel js-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<!-- magnific-popup js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-<!--cubeportfolio js-->
-<script src="http://scriptpie.com/cubeportfolio/live-preview/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-<!--cubeportfolio mosaic js-->
-<script src="http://scriptpie.com/cubeportfolio/live-preview/templates/mosaic/js/main.js"></script>
-<!-- bxslider -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
-<!--waypoint up js files-->
-<script src="js/jquery.waypoints.min.js"></script>
-<!--counter up js files-->
-<script src="js/jquery.counterup.min.js"></script>
-<!--bootstrap cdn-->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!--main js-->
-<script src="js/main.js"></script>
-<!--end of main js-->
+    </script>
 </body>
 </html>
